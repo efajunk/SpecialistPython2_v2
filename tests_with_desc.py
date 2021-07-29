@@ -19,7 +19,8 @@ class TestAccountTask2(unittest.TestCase):
         self.assertEqual(self.accounts[0].balance, 96)  # С учетом комиссии в 2%
 
     def test_withdraw_raise(self):
-        with self.assertRaises(ValueError):  # assertRaises.negative test.this test pass if next command throwback ValueError
+        with self.assertRaises(ValueError):  # assertRaises.negative test.
+            # this test pass if next command throwback ValueError
             self.accounts[0].withdraw(600)
 
     def test_transfer(self):
